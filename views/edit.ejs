@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopify-Challenge</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+        <form action="/products/<%=product._id%>?_method=PUT" method="post">
+            <label>
+                Name:
+                <input type = "text" name = "productName" value = "<%= product.productName %>" required="true">
+                Quantity:
+                <input type="number" name = "quantity" value = "<%= product.quantity %>" required="true">
+            </label>
+          <button>Submit</button>
+          <a href="/products"><button>Return Home</button></a>
+        </form>
+    </div>
+  </body>
+</html>
