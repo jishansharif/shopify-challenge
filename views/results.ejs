@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopify-Challenge</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+      <form action="/results" method = "get">
+        <input type="text" placeholder="Search products" name="search">
+        <button>Search</button>
+      </form>
+        <% products.forEach((product)=> {%>
+          <p><%= product.productName %></p>
+          <p><%= product.quantity %></p>
+          <a href="/products/<%=product._id%>/edit"><button>Edit</button></a>
+          <form action="/products/<%=product._id%>?_method=DELETE" method="post">
+            <button>Delete</button>
+          </form>
+        <% }) %>
+        <a href="/products"><button>Return Home</button></a>
+    </div>
+  </body>
+</html>
