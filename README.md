@@ -1,5 +1,5 @@
 # shopify-challenge
-This inventory tracking application is a submission for the Shopify Backend Developer Challenge and the Shopify production engineer challenge. This application is built with Node js, MongoDB and Express.
+This inventory tracking application is a submission for the Shopify Backend Developer Challenge and the Shopify Infrastructure engineer challenge. This application is built with Node js, MongoDB and Express.
 
 # Testing Instructions (Environment Set up)
 - Git clone this repository
